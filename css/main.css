@@ -61,7 +61,6 @@ body {
   display: flex;
   height: 80px;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -96,10 +95,9 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-adress-container {
-  margin-left: auto;
-}
+
 .header-adress-list {
+  margin-left: auto;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -191,7 +189,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section-work > .container {
+.section-work {
   padding-top: 0;
 }
 
@@ -204,9 +202,10 @@ body {
   flex-basis: calc((100%-60px) / 3);
 }
 
-.work-item > img,
-.team-item > img {
+img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .section-title {
@@ -235,9 +234,14 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-worker {
+
+.team-description {
   margin-top: 30px;
-  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.team-worker {
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -245,24 +249,28 @@ body {
   color: var(--secendory-color-text);
 }
 .team-profession {
-  padding-bottom: 30px;
-  margin-top: 10px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color-text);
 }
-.footer > .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .logo {
+  margin-right: 0;
+}
+.footer .adress {
+  margin-top: 20px;
 }
 
 .adress > .adress-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 20px;
 }
 
 .footer {
@@ -313,20 +321,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 50px;
+}
+
+.portfolio-list-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .portfolio-item {
   max-width: 370px;
-  border: 1px solid #eeeeee;
-  padding-bottom: 20px;
 }
 .portfolio-item > img {
   display: block;
 }
 
 .portfolio-item-title {
-  margin-top: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -338,9 +350,4 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-}
-
-.portfolio-item-title,
-.portfolio-item-text {
-  margin-left: 24px;
 }
