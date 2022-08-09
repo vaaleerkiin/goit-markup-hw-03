@@ -236,8 +236,8 @@ img {
 }
 
 .team-description {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-worker {
@@ -328,6 +328,7 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
